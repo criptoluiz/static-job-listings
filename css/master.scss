@@ -1,6 +1,8 @@
+@use 'component.scss';
+
 // Colors:
 $desaturatedDarkCyan: hsl(180, 29%, 50%);
-$lightGrayishCyan: hsl(180, 31%, 95%);
+$lightGrayishCyanbg: hsl(180, 31%, 95%);
 $lightGrayishCyan: hsl(180, 52%, 96%);
 $darkGrayishCyan: hsl(180, 8%, 52%);
 $veryDarkGrayishCyan: hsl(180, 14%, 20%);
@@ -10,11 +12,22 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 15px;
-    
+    font-family: sans-serif;
 }
 
 .container {
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    background-color: $lightGrayishCyanbg;
+}
+
+.listed-item {
+    margin: 2vh 7.5vw;
+    background-color: white;
+    padding: 2vh 2vh;
+
+    p {
+        display: inline;
+    }
 }

@@ -1,0 +1,70 @@
+// Colors:
+$desaturatedDarkCyan: hsl(180, 29%, 50%);
+$lightGrayishCyanbg: hsl(180, 31%, 95%);
+$lightGrayishCyan: hsl(180, 52%, 96%);
+$darkGrayishCyan: hsl(180, 8%, 52%);
+$veryDarkGrayishCyan: hsl(180, 14%, 20%);
+
+.listed-item {
+    font-weight: 700;
+
+    .job-company {
+
+        .company-name {
+            color: $desaturatedDarkCyan;
+            font-weight: bold;
+        }
+
+        .new {
+            background-color: $desaturatedDarkCyan;
+            color: white;
+            text-transform: uppercase;
+            padding: 0.2rem 0.5rem;
+            border-style: none;    
+            border-radius: 15px;
+            font-size: 0.8rem;
+        }
+
+        .featured {
+            background-color: $veryDarkGrayishCyan;
+            color: white;
+            text-transform: uppercase;
+            padding: 0.2rem 0.5rem;
+            border-style: none;
+            border-radius: 15px;
+            font-size: 0.8rem;
+        }
+
+    }
+
+    .job-info {
+        .job-title {
+             font-size: 1rem;
+            margin: 1vh 0;
+        }   
+
+        .job-details {
+            margin: 1vh 0;
+            color: $darkGrayishCyan;
+        }
+
+
+    }
+
+    .tags {
+        display: flex;
+        margin: 1vh 0;
+        border-top: solid $darkGrayishCyan 0.2px;
+        padding-top: 1vh;
+        flex-wrap: wrap;
+
+        .tag {
+            margin: 0.5vh 0.5vh;
+            color: $desaturatedDarkCyan;
+            background-color: $lightGrayishCyan;
+            padding: 0.5rem 0.5rem;
+            border-style: none;
+            border-radius: 5px;
+        }
+    }
+}
